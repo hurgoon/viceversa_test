@@ -27,7 +27,6 @@ class DataController extends GetxController {
         '_type': 'json',
       };
 
-      debugPrint('⚪ queryParameters : ${queryParameters}');
       dioo.Response response = await dio.get(url, queryParameters: queryParameters);
 
       return response.data;
